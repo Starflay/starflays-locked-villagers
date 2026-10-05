@@ -15,11 +15,6 @@
   "license": "CC0-1.0",
   "icon": "assets/starflays_locked_villagers/icon.png",
   "environment": "*",
-  "entrypoints": {
-    "main": [
-      "com.starflay.starflayslockedvillagers.Starflays_locked_villagers"
-    ]
-  },
   "mixins": [
     "starflays_locked_villagers.mixins.json"
   ],

@@ -25,7 +25,7 @@ public abstract class VillagerMixin {
         Villager villager = (Villager) (Object) this;
 
         if (!villager.level().isClientSide()
-                && villager.getVillagerData().profession().value() != VillagerProfession.NONE) {
+                && !villager.getVillagerData().profession().is(VillagerProfession.NONE)) {
             villager.addTag(STARFLAYS_LOCKED_VILLAGERS_TAG);
         }
     }
@@ -37,9 +37,9 @@ public abstract class VillagerMixin {
     ) {
         Villager villager = (Villager) (Object) this;
 
-        if (villager.getTags().contains(STARFLAYS_LOCKED_VILLAGERS_TAG)
-                && villager.getVillagerData().profession().value() != VillagerProfession.NONE
-                && newData.profession().value() == VillagerProfession.NONE) {
+        if (villager.entityTags().contains(STARFLAYS_LOCKED_VILLAGERS_TAG)
+                && !villager.getVillagerData().profession().is(VillagerProfession.NONE)
+                && newData.profession().is(VillagerProfession.NONE)) {
             ci.cancel();
         }
     }

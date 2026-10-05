@@ -20,7 +20,7 @@ public abstract class VillagerMixin {
         Villager villager = (Villager) (Object) this;
 
         if (!villager.level().isClientSide() && villager.getVillagerXp() == 0) {
-            villager.overrideXp(1);
+            villager.setVillagerXp(1);
         }
     }
 }

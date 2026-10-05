@@ -3,9 +3,9 @@
   "id": "starflays_locked_villagers",
   "version": "${version}",
   "name": "Starflay's Locked Villagers",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "description": "Automatically locks a villager's trades after you view them for the first time, preventing their trades from changing when their workstation is broken or replaced.",
   "authors": [
-    "Me!"
+    "Starflay"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",

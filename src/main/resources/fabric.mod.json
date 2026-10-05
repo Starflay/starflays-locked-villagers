@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "starflays_locked_villagers",
+  "version": "${version}",
+  "name": "Starflay's Locked Villagers",
+  "description": "Automatically locks a villager's trades after you view them for the first time, preventing their trades from changing when their workstation is broken or replaced.",
+  "authors": [
+    "Starflay"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Starflay/starflays-locked-villagers",
+    "sources": "https://github.com/Starflay/starflays-locked-villagers",
+    "issues": "https://github.com/Starflay/starflays-locked-villagers/issues"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/starflays_locked_villagers/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.starflay.starflayslockedvillagers.Starflays_locked_villagers"
+    ]
+  },
+  "mixins": [
+    "starflays_locked_villagers.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.1.1",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}

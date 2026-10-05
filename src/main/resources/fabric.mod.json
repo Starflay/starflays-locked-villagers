@@ -8,8 +8,8 @@
     "Starflay"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/Starflay/starflays-locked-villagers",
+    "sources": "https://github.com/Starflay/starflays-locked-villagers"
   },
   "license": "CC0-1.0",
   "icon": "assets/starflays_locked_villagers/icon.png",

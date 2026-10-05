@@ -1,41 +1,41 @@
 {
-	"schemaVersion": 1,
-	"id": "starflays_locked_villagers",
-	"version": "${version}",
-	"name": "starflays_locked_villagers",
-	"description": "This is an example description! Tell everyone what your mod is about!",
-	"authors": [
-		"Me!"
-	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
-	"license": "CC0-1.0",
-	"icon": "assets/starflays_locked_villagers/icon.png",
-	"environment": "*",
-	"entrypoints": {
-		"main": [
-			"com.starflay.starflayslockedvillagers.Starflays_locked_villagers"
-		],
-		"client": [
-			"com.starflay.starflayslockedvillagers.client.Starflays_locked_villagersClient"
-		],
-		"fabric-datagen": [
-			"com.starflay.starflayslockedvillagers.client.Starflays_locked_villagersDataGenerator"
-		]
-	},
-	"mixins": [
-		"starflays_locked_villagers.mixins.json",
-		{
-			"config": "starflays_locked_villagers.client.mixins.json",
-			"environment": "client"
-		}
-	],
-	"depends": {
-		"fabricloader": ">=0.19.5",
-		"minecraft": "~26.1.1",
-		"java": ">=25",
-		"fabric-api": "*"
-	}
+  "schemaVersion": 1,
+  "id": "starflays_locked_villagers",
+  "version": "${version}",
+  "name": "Starflay's Locked Villagers",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "Me!"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/starflays_locked_villagers/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.starflay.starflayslockedvillagers.Starflays_locked_villagers"
+    ],
+    "client": [
+      "com.starflay.starflayslockedvillagers.client.Starflays_locked_villagersClient"
+    ],
+    "fabric-datagen": [
+      "com.starflay.starflayslockedvillagers.client.Starflays_locked_villagersDataGenerator"
+    ]
+  },
+  "mixins": [
+    "starflays_locked_villagers.mixins.json",
+    {
+      "config": "starflays_locked_villagers.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.1.1",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
 }
